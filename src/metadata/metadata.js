@@ -15,7 +15,7 @@ module.exports = {
   },
   positions: [
     {
-      title: "AI Engineer / Consultant @ Prolific [contract]",
+      title: "AI Engineer / AI Consultant @ Prolific [contract]",
       period: "May 2023 - Ongoing",
       skills: [
         "NLP",
@@ -57,7 +57,7 @@ semantic search on chunked vectorised documents. The tool integrated with multip
 `,
     },
     {
-      title: "Lead Engineer @ Signal.ai [full-time]",
+      title: "Lead Software Engineer @ Signal.ai [full-time]",
       period: "Apr 2022 - May 2023",
       skills: [
         "NLP",
