@@ -50,14 +50,28 @@
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
         I am an experienced Software Engineer and Machine Learning Engineer specialising in NLP use cases.
-        Particularly interested in AI Alignment problems. I like picking up new skills 
-        and am always open to interesting challenges. My academic background is in Maths and
-        Physics and I have a passion for AI, which is currently my main area of focus. I am motivated to
+        Particularly interested in AI alignment problems and interpretability research. I am motivated to
         bridge the gap between the capabilities of humans and AI agents, and am fully invested in working towards
         building a future in which machines and humans cooperate with and augment one another. I am driven by my
         curiosity to understand the inner workings of the brain and think that advances in AI will play an important role
         in providing valuable insights into this long-standing puzzle. 
     </div>
+
+    <h2 class="mb-4">Projects</h2>
+
+    {{#each experience}}
+    <div class="mb-4">
+        <h3 class="fs-4 fw-normal">{{ header }}</h3>
+
+        {{{markdown contents }}}
+
+        <div>
+            {{#each skills }}
+            <span class="badge text-body border border-1">{{ this }}</span>
+            {{/each}}
+        </div>
+    </div>
+    {{/each}}
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
         <h2 class="mb-4">Professional Experience</h2>
@@ -91,21 +105,7 @@
         <span>BA Informatics - Molde University - 2007 - 2010</span><br />
     </div>
 
-    <h2 class="mb-4">Projects</h2>
 
-    {{#each experience}}
-    <div class="mb-4">
-        <h3 class="fs-4 fw-normal">{{ header }}</h3>
-
-        {{{markdown contents }}}
-
-        <div>
-            {{#each skills }}
-            <span class="badge text-body border border-1">{{ this }}</span>
-            {{/each}}
-        </div>
-    </div>
-    {{/each}}
 </div>
 </body>
 </html>
