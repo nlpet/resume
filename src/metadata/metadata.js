@@ -218,7 +218,7 @@ Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef a
     {
       header: "Anthropic Claude Hackathon (Nov 2023)",
       skills: ["NLP", "LLMs", "Next.js", "React", "Javascript", "R&D"],
-      contents: `Participated in a [Hackathon](https://anthropiclondon.devpost.com/) organised by Anthropic London. I developed an app that uses AI (Clade) to help us make sense of the News. Its aim is to introduce nuance and multiple perspectives, and enable us to entertain multiple points of view when we make up our minds about current events. [GitHub Repository](https://github.com/nlpet/anthropic-hackathon-claude) for the project.`,
+      contents: `Participated in a [Hackathon](https://anthropiclondon.devpost.com/) organised by Anthropic London. I developed an app that uses Claude to help us make sense of the News. Its aim is to introduce nuance and multiple perspectives, and enable us to entertain multiple points of view when we make up our minds about current events. [GitHub Repository](https://github.com/nlpet/anthropic-hackathon-claude) for the project.`,
     },
   ],
 };
