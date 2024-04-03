@@ -145,7 +145,7 @@ consisted of Python, Tensorflow / Keras / scikit-learn on GCP
     {
       title:
         "Machine Learning Engineer / Researcher & Full Stack Software Engineer @ Prodo.ai [full-time]",
-      period: "June 2017 - Sept 2018",
+      period: "Jun 2017 - Sept 2018",
       skills: [
         "ML",
         "Python",
