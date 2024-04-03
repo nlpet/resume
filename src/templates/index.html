@@ -57,21 +57,24 @@
         in providing valuable insights into this long-standing puzzle. 
     </div>
 
-    <h2 class="mb-4">Projects</h2>
+    <div class="mb-5">
+        <h2 class="mb-4">Projects</h2>
 
-    {{#each experience}}
-    <div class="mb-4">
-        <h3 class="fs-4 fw-normal">{{ header }}</h3>
+        {{#each experience}}
+        <div class="mb-4">
+            <h3 class="fs-4 fw-normal">{{ header }}</h3>
 
-        {{{markdown contents }}}
+            {{{markdown contents }}}
 
-        <div>
-            {{#each skills }}
-            <span class="badge text-body border border-1">{{ this }}</span>
-            {{/each}}
+            <div>
+                {{#each skills }}
+                <span class="badge text-body border border-1">{{ this }}</span>
+                {{/each}}
+            </div>
         </div>
+        {{/each}}
     </div>
-    {{/each}}
+
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
         <h2 class="mb-4">Professional Experience</h2>
