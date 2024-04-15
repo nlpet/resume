@@ -210,6 +210,12 @@ Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef a
   ],
   experience: [
     {
+      header: "InterpVis Hackathon (Apr 2024)",
+      skills: ["NLP", "LLMs", "Mechanistic Interpretability", "Visualisations"],
+      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/interpvis-apr-2024) organised by [Apart](https://www.apartresearch.com/) and [LISA](https://www.safeai.org.uk/). The team I was in worked on visualising correlations between features across layers in an SAE trained on activations from the residual stream. We developed a prototype for visualising the relationships between features as a directed graph and linked features to [Neuronpedia](https://www.neuronpedia.org/) for further analysis.
+      `,
+    },
+    {
       header: "Testing LLMs for Autonomous Capabilities Hackathon (Mar 2024)",
       skills: ["NLP", "LLMs", "R&D"],
       contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/codered) organised by [Apart](https://www.apartresearch.com/) and [METR](https://metr.org/) where the goal was to develop tasks to detect replication and R&D capabilities of LLMs. I worked on a task about capabilities of LLMs to introduce backdoors in datasets and to fine-tune other models on them. Based on research from the [Sleeper Agents paper](https://arxiv.org/abs/2401.05566) by Anthorpic.
