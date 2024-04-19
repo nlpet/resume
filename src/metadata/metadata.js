@@ -166,7 +166,7 @@ Elasticsearch, docker, AWS, Google Cloud and others.
     },
     {
       title: "Full Stack Software Engineer @ R3PI [full-time]",
-      period: "Feb 2017 - June 2018",
+      period: "Feb 2017 - Jun 2017",
       skills: ["Javascript", "NodeJS", "React", "Docker", "MongoDB", "TDD"],
       contents: `- Built a suite of micro services which provide metrics and analytics, enabling clients to make better informed
       decisions about the vehicles under their control. The technologies we used were: Javascript, NodeJS, MySQL,
