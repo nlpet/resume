@@ -210,6 +210,12 @@ Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef a
   ],
   experience: [
     {
+      header: "Democracy x AI Hackathon (May 2024)",
+      skills: ["NLP", "LLMs", "AI Safety"],
+      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/ai-democracy) organised by [Apart](https://www.apartresearch.com/). I worked on a project that explored how using Sleeper Agents can have reprecussions to democratic processes. More information about the project is available on the [project page](https://www.apartresearch.com/project/unleashing-sleeper-agents).
+      `,
+    },
+    {
       header: "InterpVis Hackathon (Apr 2024)",
       skills: ["NLP", "LLMs", "Mechanistic Interpretability", "Visualisations"],
       contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/interpvis-apr-2024) organised by [Apart](https://www.apartresearch.com/) and [LISA](https://www.safeai.org.uk/). The team I was in worked on visualising correlations between features across layers in an SAE trained on activations from the residual stream. We developed a prototype for visualising the relationships between features as a directed graph and linked features to [Neuronpedia](https://www.neuronpedia.org/) for further analysis.
