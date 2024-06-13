@@ -1,11 +1,11 @@
 :root {
-  --bs-font-sans-serif: Roboto, sans-serif;
+  --bs-font-sans-serif: Inter, Roboto, sans-serif;
   --bs-body-font-weight: 400;
   --bs-body-color: #858585;
   --bs-body-color-rgb: 133, 133, 133;
   --light-color: #d9d9d9;
   --dark-color: #7a7a7a;
-  --bs-body-font-size: 1.2rem;
+  --bs-body-font-size: 1rem;
 }
 
 a {
