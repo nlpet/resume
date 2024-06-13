@@ -15,6 +15,13 @@ module.exports = {
   },
   positions: [
     {
+      title: "AI Researcher @ Apart Lab",
+      period: "May 2024 - Ongoing",
+      skills: ["NLP", "LLMs", "AI Safety"],
+      contents: `Conducting research into AI safety with Apart Lab part-time. Research area is activation steering and targeted / non-targeted [latent adversarial training](https://arxiv.org/abs/2403.05030) in relation to refusal of harmful requests.
+`,
+    },
+    {
       title: "AI Engineer / AI Consultant @ Prolific [contract]",
       period: "May 2023 - Ongoing",
       skills: [
@@ -22,8 +29,9 @@ module.exports = {
         "LLMs",
         "RLHF",
         "Python",
-        "Javascript",
+        "Typescript",
         "Next.js",
+        "Vue",
         "R&D",
         "AWS",
         "Product",
@@ -109,7 +117,7 @@ approaches (within NLP) to client problems
         "Client Projects",
       ],
       contents: `- Led multiple client projects from a technical standpoint; providing direction for the technical delivery and
-      architecting machine learning based solutions on Google Cloud Platform
+      architecture machine learning based solutions on Google Cloud Platform
 - Performed research and applied state-of-the-art machine learning models and techniques in client projects
 - Mentored more junior members of the team and managed a small team
 - Participated in workshops and presented at client facing events
@@ -212,7 +220,7 @@ Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef a
     {
       header: "Democracy x AI Hackathon (May 2024)",
       skills: ["NLP", "LLMs", "AI Safety"],
-      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/ai-democracy) organised by [Apart Lab](https://www.apartresearch.com/). I worked on a project that explored how using Sleeper Agents can have reprecussions to democratic processes. More information about the project is available on the [project page](https://www.apartresearch.com/project/unleashing-sleeper-agents).
+      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/ai-democracy) organised by [Apart Lab](https://www.apartresearch.com/). I worked on a project that explored how using Sleeper Agents can have repercussions to democratic processes. More information about the project is available on the [project page](https://www.apartresearch.com/project/unleashing-sleeper-agents).
       `,
     },
     {
@@ -224,7 +232,7 @@ Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef a
     {
       header: "Testing LLMs for Autonomous Capabilities Hackathon (Mar 2024)",
       skills: ["NLP", "LLMs", "R&D"],
-      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/codered) organised by [Apart Lab](https://www.apartresearch.com/) and [METR](https://metr.org/) where the goal was to develop tasks to detect replication and R&D capabilities of LLMs. I worked on a task about capabilities of LLMs to introduce backdoors in datasets and to fine-tune other models on them. Based on research from the [Sleeper Agents paper](https://arxiv.org/abs/2401.05566) by Anthorpic.
+      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/codered) organised by [Apart Lab](https://www.apartresearch.com/) and [METR](https://metr.org/) where the goal was to develop tasks to detect replication and R&D capabilities of LLMs. I worked on a task about capabilities of LLMs to introduce backdoors in datasets and to fine-tune other models on them. Based on research from the [Sleeper Agents paper](https://arxiv.org/abs/2401.05566) by Anthropic.
       `,
     },
     {
