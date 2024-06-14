@@ -99,7 +99,7 @@ product point of view and continuous improvement of services
 - Responsible for performing data analysis, modelling and preparation, and coming up with machine learning
 approaches (within NLP) to client problems
 - Involved in bringing state-of-the-art approaches within NLP to client projects (transformer based models)
-- Researched appropriate storage layers for knowledge bases, as well as techniques for building them (Neo4J, MongoDB, Postgres)
+- Researched appropriate storage layers for knowledge graphs, as well as techniques for building them (Neo4J, MongoDB, Postgres)
       `,
     },
     {
