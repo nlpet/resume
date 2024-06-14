@@ -227,7 +227,7 @@ Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef a
     {
       header: "InterpVis Hackathon (Apr 2024)",
       skills: ["NLP", "LLMs", "Mechanistic Interpretability", "Visualisations"],
-      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/interpvis-apr-2024) organised by [Apart Lab](https://www.apartresearch.com/) and [LISA](https://www.safeai.org.uk/). The team I was in worked on visualising correlations between features across layers in an SAE trained on activations from the residual stream. We developed a prototype for visualising the relationships between features as a directed graph and linked features to [Neuronpedia](https://www.neuronpedia.org/) for further analysis.
+      contents: `Participated in a [Hackathon](https://www.apartresearch.com/event/interpvis-apr-2024) organised by [Apart Lab](https://www.apartresearch.com/) and [LISA](https://www.safeai.org.uk/). The team I was in worked on visualising correlations between features across layers in an SAE trained on activations from the residual stream. We developed a prototype for visualising the relationships between features as a directed graph and linked features to [Neuronpedia](https://www.neuronpedia.org/) for further analysis. The code for the tool can be found in its [GitHub repository](https://github.com/nlpet/sae-feature-graph-vis).
       `,
     },
     {
