@@ -118,7 +118,7 @@ approaches (within NLP) to client problems
         "Client Projects",
       ],
       contents: `- Led multiple client projects from a technical standpoint; providing direction for the technical delivery and
-      architecture machine learning based solutions on Google Cloud Platform
+      the architecture of machine learning based solutions on Google Cloud Platform
 - Performed research and applied state-of-the-art machine learning models and techniques in client projects
 - Mentored more junior members of the team and managed a small team
 - Participated in workshops and presented at client facing events
