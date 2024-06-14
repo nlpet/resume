@@ -86,8 +86,9 @@ semantic search on chunked vectorised documents. The tool integrated with multip
 - Involved in researching relevant state-of-the-art techniques within NLP, prototyping applications, developing
 production ready pipeline services and optimising models for production
 - Involved in bringing state-of-the-art approaches within NLP to client projects (transformer based models)
-- Responsibilities include maintenance of existing pipeline services, roadmap for the team, strategy from a
+- Responsibilities included maintenance of existing pipeline services, roadmap for the team, strategy from a
 product point of view and continuous improvement of services
+- Built a RAG prototype which searched against a large Elasticsearch cluster of news documents with the goal to respond to arbitrary queries
       `,
     },
     {
