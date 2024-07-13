@@ -15,6 +15,13 @@ module.exports = {
   },
   positions: [
     {
+      title: "AI Researcher @ LASR Labs",
+      period: "July 2024 - Sept 2024",
+      skills: ["LLMs", "AI Safety", "Mechanistic Interpretability"],
+      contents: `Conducting research into AI safety as part of the [LASR Labs](https://www.lasrlabs.org/) 12 week research programme. The project involves studying activation space features and linking them to model behaviour. We're specifically investigating which activation directions are especially "sensitive" (as measured by KL divergence of the output logits) in LLMs, i.e. affect the model outputs more, and we want to test whether these directions are related to SAE features.
+`,
+    },
+    {
       title: "AI Researcher @ Apart Lab",
       period: "May 2024 - Ongoing",
       skills: ["NLP", "LLMs", "AI Safety"],
