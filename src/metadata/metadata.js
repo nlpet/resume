@@ -30,7 +30,7 @@ module.exports = {
     },
     {
       title: "AI Engineer / AI Consultant @ Prolific [contract]",
-      period: "May 2023 - Ongoing",
+      period: "May 2023 - June 2024",
       skills: [
         "NLP",
         "LLMs",
