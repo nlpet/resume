@@ -214,7 +214,7 @@ Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef a
       `,
     },
     {
-      title: "Full Stack Software Engineer @ AWS.com [full-time]",
+      title: "Full Stack Software Engineer @ AXS.com [full-time]",
       period: "Dec 2012 - Nov 2015",
       skills: ["Javascript", "React", "Python", "MySQL", "Full Stack"],
       contents: `- Worked on building a ticketing application which was to replace the existing system and make it easier to
