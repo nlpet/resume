@@ -1,6 +1,6 @@
 module.exports = {
   name: "Nora Petrova",
-  title: "Machine Learning Engineer",
+  title: "AI Research Engineer",
   facts: {
     Location:
       '<a href="https://www.google.com/maps/place/London,+UK/@51.5285582,-0.2416814,11z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862"><i class="fa fa-home fact-icon"></i>London</a>',
@@ -15,38 +15,38 @@ module.exports = {
   },
   positions: [
     {
-      title: "AI Researcher @ LASR Labs",
+      title: "Research Engineer @ Prolific",
+      period: "May 2023 - Present",
+      skills: [
+        "AI Evaluation",
+        "AI Safety",
+        "Alignment",
+        "LLMs",
+        "Agentic Evals",
+        "Python",
+        "R&D",
+      ],
+      contents: `- Leading AI evaluation research, building agentic and human-in-the-loop evaluation frameworks for studying safety and alignment in frontier models
+- Led [HUMAINE](https://huggingface.co/spaces/ProlificAI/humaine-leaderboard), a large-scale evaluation of human experience in using AI — paper accepted at [ICLR 2026](https://openreview.net/pdf?id=kVaE2kYjtV)
+- Developed [commercial pressure evaluations](https://github.com/prolific-oss/commercial-pressure-evals) testing how frontier models respond when commercial objectives conflict with user safety, finding most models have no "red line" — won 1st place at the [AI Manipulation Hackathon](https://apartresearch.com/project/who-does-your-ai-serve-manipulation-by-and-of-ai-assistants-77xx), presenting at [IASEAI 2026](https://iaseai.org/)
+- Developed a behavioural alignment benchmark with an [interactive leaderboard](https://huggingface.co/spaces/nlpetprolific/alignment-leaderboard) and co-authored [Pressure Reveals Character](https://arxiv.org/abs/2602.20813)
+- Working on agentic evaluations for ethical decision making, mechanistic interpretability of refusal circuits and black-box prefix attacks in open source models, and studying how to decouple reasoning from knowledge using tiny recursive models (TRMs)
+- Involved in cross-team projects including synthetic polling, agent detection, LLM usage detection, and multi-human-agent collaboration studies
+- Earlier work included developing an open source [social reasoning RLHF dataset](https://huggingface.co/datasets/ProlificAI/social-reasoning-rlhf) and researching methods for aligning LLMs to human values
+`,
+    },
+    {
+      title: "AI Safety Researcher @ LASR Labs",
       period: "July 2024 - Sept 2024",
       skills: ["LLMs", "AI Safety", "Mechanistic Interpretability"],
-      contents: `Conducting research into AI safety as part of the [LASR Labs](https://www.lasrlabs.org/) 12 week research programme. The project involves studying activation space features and linking them to model behaviour. We're specifically investigating which activation directions are especially "sensitive" (as measured by KL divergence of the output logits) in LLMs, i.e. affect the model outputs more, and we want to test whether these directions are related to SAE features.
+      contents: `Research into AI safety as part of the [LASR Labs](https://www.lasrlabs.org/) 12-week research programme. Investigated how synthetic activations composed of SAE latents compare to real model activations in GPT-2, measuring sensitivity via KL divergence of output logits. Found that while synthetic activations behave comparably to real ones under sparsity and geometric similarity metrics, real activations contain structural properties beyond independent components. Paper [Evaluating Synthetic Activations composed of SAE Latents in GPT-2](https://arxiv.org/abs/2409.15019) accepted at NeurIPS 2024.
 `,
     },
     {
-      title: "AI Researcher @ Apart Lab",
+      title: "AI Safety Researcher @ Apart Research",
       period: "May 2024 - Ongoing",
       skills: ["NLP", "LLMs", "AI Safety"],
-      contents: `Conducting research into AI safety with Apart Lab part-time. Research area is activation steering and targeted / non-targeted [latent adversarial training](https://arxiv.org/abs/2403.05030) in relation to refusal of harmful requests.
-`,
-    },
-    {
-      title: "AI Engineer / AI Consultant @ Prolific [contract]",
-      period: "May 2023 - June 2024",
-      skills: [
-        "NLP",
-        "LLMs",
-        "RLHF",
-        "Python",
-        "Typescript",
-        "Next.js",
-        "Vue",
-        "R&D",
-        "AWS",
-        "Product",
-        "Full Stack",
-      ],
-      contents: `- Advising Prolific on AI strategy and product development, primarily within NLP
-- Researched, developed and open sourced a [social reasoning dataset](https://huggingface.co/datasets/ProlificAI/social-reasoning-rlhf), for fine-tuning of LLMs using RLHF
-- Researching state-of-the-art methods for aligning LLMs to human values, e.g. democratic-fine-tuning
+      contents: `Research fellowship (now ongoing collaboration) into AI safety alongside role at Prolific. Studied how [latent adversarial training](https://arxiv.org/abs/2403.05030) (LAT) affects how language models encode refusal. Found that LAT concentrates refusal representation into fewer SVD components, making models more robust against external attacks but paradoxically more vulnerable to self-generated attack vectors. Paper [LAT Improves the Representation of Refusal](https://arxiv.org/abs/2504.18872) accepted at ICLR 2025.
 `,
     },
     {
@@ -72,157 +72,20 @@ semantic search on chunked vectorised documents. The tool integrated with multip
 `,
     },
     {
-      title: "Lead Software Engineer @ Signal.ai [full-time]",
+      title: "Lead Software Engineer @ Signal.ai",
       period: "Apr 2022 - May 2023",
-      skills: [
-        "NLP",
-        "Python",
-        "Clojure",
-        "R&D",
-        "Modelling",
-        "Terraform",
-        "MLOps",
-        "AWS",
-        "Full-Stack",
-        "Management",
-        "Tech Lead",
-      ],
-      contents: `- Led a team of engineers and researchers with the aim of developing machine learning models and services
-      for MD (mention detection), ED (entity disambiguation), detecting sentiment, text classification, zero/ few shot
-      learning approaches and custom models relevant to our clients
-- Involved in researching relevant state-of-the-art techniques within NLP, prototyping applications, developing
-production ready pipeline services and optimising models for production
-- Involved in bringing state-of-the-art approaches within NLP to client projects (transformer based models)
-- Responsibilities included maintenance of existing pipeline services, roadmap for the team, strategy from a
-product point of view and continuous improvement of services
-- Built a RAG prototype which searched against a large Elasticsearch cluster of news documents with the goal to respond to arbitrary queries
-      `,
+      skills: [],
+      contents: `- Led a team of engineers and researchers developing ML models and services for mention detection, entity disambiguation, sentiment analysis, text classification, and zero/few-shot learning
+- Researched state-of-the-art NLP techniques, prototyped applications, and developed production-ready pipeline services using transformer-based models
+- Built a RAG prototype searching against a large Elasticsearch cluster of news documents to respond to arbitrary queries
+`,
     },
-    {
-      title: "Senior Product Engineer @ Primer.ai [full-time]",
-      period: "May 2021 - Mar 2022",
-      skills: ["NLP", "Python", "Full Stack", "R&D", "Product"],
-      contents: `- Involved in building NLP powered applications in a full stack capacity (React, Typescript, Python)
-- Responsible for performing data analysis, modelling and preparation, and coming up with machine learning
-approaches (within NLP) to client problems
-- Involved in bringing state-of-the-art approaches within NLP to client projects (transformer based models)
-- Researched appropriate storage layers for knowledge graphs, as well as techniques for building them (Neo4J, MongoDB, Postgres)
-      `,
-    },
-    {
-      title: "Principal Machine Learning Engineer @ Datatonic [full-time]",
-      period: "Nov 2019 - May 2021",
-      skills: [
-        "ML",
-        "Python",
-        "Full Stack",
-        "R&D",
-        "GCP",
-        "MLOps",
-        "Modelling",
-        "Productionisation",
-        "Management",
-        "Client Projects",
-      ],
-      contents: `- Led multiple client projects from a technical standpoint; providing direction for the technical delivery and
-      the architecture of machine learning based solutions on Google Cloud Platform
-- Performed research and applied state-of-the-art machine learning models and techniques in client projects
-- Mentored more junior members of the team and managed a small team
-- Participated in workshops and presented at client facing events
-- Completed Google’s Professional Machine Learning Engineer and Cloud Architect certifications
-      `,
-    },
-    {
-      title: "Senior Machine Learning Engineer @ Datatonic [full-time]",
-      period: "Sept 2018 - Nov 2019",
-      skills: [
-        "ML",
-        "Python",
-        "Javascript",
-        "React",
-        "Full Stack",
-        "R&D",
-        "GCP",
-        "MLOps",
-        "Modelling",
-        "Productionisation",
-        "Client Projects",
-      ],
-      contents: `- Worked on client projects to build and deploy machine learning models on Google Cloud Platform. This
-      usually involved performing data analysis, building data processing pipelines, researching and developing
-      machine learning models, and delivering solutions in short timeframes
-- Worked on a variety of proof-of-concept projects for clients in problem areas such as NLP, document
-classification, computer vision, anomaly detection, recommender systems, and forecasting. The technical stack
-consisted of Python, Tensorflow / Keras / scikit-learn on GCP
-- Led an internal project for standardising machine learning approaches and defining best practices
-- Completed Google’s Professional Data Engineer and Cloud Architect certifications
-      `,
-    },
-    {
-      title:
-        "Machine Learning Engineer / Researcher & Full Stack Software Engineer @ Prodo.ai [full-time]",
-      period: "Jun 2017 - Sept 2018",
-      skills: [
-        "ML",
-        "Python",
-        "Typescript",
-        "React",
-        "Full Stack",
-        "R&D",
-        "AWS",
-      ],
-      contents: `- Worked on developing deep learning models by leveraging the latest research in AI within graph based
-      neural networks. Primarily using Python, PyTorch and NumPy for model building; pandas, scikit-learn,
-      matplotlib for data, evaluation and visualisation.
-- Worked across the stack on building an application which communicates machine learning insights to clients
-using Javascript, HTML/CSS, NodeJS, Koa, React.js, Redux, Webpack, Ava, RabbitMQ, Kubernetes, MySQL,
-Elasticsearch, docker, AWS, Google Cloud and others.
-- Developed infrastructure tools for running machine learning experiments using primarily Python and AWS.
-      `,
-    },
-    {
-      title: "Full Stack Software Engineer @ R3PI [full-time]",
-      period: "Feb 2017 - Jun 2017",
-      skills: ["Javascript", "NodeJS", "React", "Docker", "MongoDB", "TDD"],
-      contents: `- Built a suite of micro services which provide metrics and analytics, enabling clients to make better informed
-      decisions about the vehicles under their control. The technologies we used were: Javascript, NodeJS, MySQL,
-      MongoDB, Docker, Mocha, Chai, Istanbul, Bluebird, Hapi, Joi, Bunyan, Bookshelf, Knex, Mongoose among others.
-- Project was completed in May and was deployed and used by a major client
-      `,
-    },
-    {
-      title: "Full Stack Software Engineer @ Digital Catapult [full-time]",
-      period: "Nov 2015 - July 2016",
-      skills: [
-        "Javascript",
-        "NodeJS",
-        "React",
-        "Python",
-        "AWS",
-        "Terraform",
-        "Hadoop",
-        "MySQL",
-        "SPARQL",
-      ],
-      contents: `- Delivered an open source project which is an implementation of an open online digital rights service. The
-      back-end was written in Python using the Tornado async framework. We also used Django, Flask, behave,
-      pytest, Blazegraph (graph db using RDF/SPARQL), MySQL and others. The front-end was written in Javascript
-      with React.js, Bacon.js, gulp and others.
-- Worked on designing, building, testing and deploying the above mentioned project and helped on building an
-openstack cluster for a project that enables data scientists to mix closed data sets in a secure environment.
-Technologies used: Openstack, Hadoop, Ambari, Terraform, vagrant, docker, chef and AWS.
-      `,
-    },
-    {
-      title: "Full Stack Software Engineer @ AXS.com [full-time]",
-      period: "Dec 2012 - Nov 2015",
-      skills: ["Javascript", "React", "Python", "MySQL", "Full Stack"],
-      contents: `- Worked on building a ticketing application which was to replace the existing system and make it easier to
-      maintain, extend, integrate analytics and modernise the existing experience for our customers. The front-end
-      was built using Javascript and React.js, and the back-end was written in Python. I worked across the stack.
-- Implemented core functionality and helped with the roll-out of the product
-      `,
-    },
+  ],
+  earlierRoles: [
+    { title: "Senior Product Engineer", company: "Primer.ai", period: "2021 – 2022" },
+    { title: "ML Engineer → Principal ML Engineer", company: "Datatonic", period: "2018 – 2021" },
+    { title: "ML Engineer / Researcher", company: "Prodo.ai", period: "2017 – 2018" },
+    { title: "Full Stack Engineer", company: "R3PI, Digital Catapult, AXS", period: "2012 – 2017" },
   ],
   experience: [
     {

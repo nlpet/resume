@@ -6,112 +6,151 @@
     <title>{{ name }}. {{ title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <base target="_blank">
 </head>
 <body>
-<div class="container page">
-    <div class="border-bottom border-1 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <div class="row">
-            <div class="col-print-6 col-12 col-md-4 d-flex justify-content-between flex-column">
-                <div>
-                    <h1 class="mb-0 fs-2">{{ name }}</h1>
-                    <div class="fs-4">{{ title }}</div>
-                </div>
-                <div>
-                    <p>
-                        <time datetime="{{ buildinfo.date }}" class="small">Last update: {{ updated }}</time>
-                    </p>
-                    <p>
-                        <span class="screen"><a href="{{ pdfFileName }}"><i class="far fa-file-pdf"></i>Download PDF version</a></span>
-                        <span class="print">Up-to-date version of CV is available at <a href="{{ baseUrl }}"
-                                                                                        class="text-nowrap"><i
-                            class="fab fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 offset-lg-1 d-none d-md-block align-md-self-center text-center">
-            </div>
-            <div class="col-print-6 col-12 col-md-5 offset-lg-1 col-lg-4">
-                <ul class="list-group list-group-flush">
+<div class="page">
+
+    <header class="header">
+        <h1>{{ name }}</h1>
+        <div class="header__title">{{ title }}</div>
+        <div class="header__meta">
+            <time datetime="{{ buildinfo.date }}">Last update: {{ updated }}</time>
+            &nbsp;&middot;&nbsp;
+            <span class="screen"><a href="{{ pdfFileName }}"><i class="far fa-file-pdf"></i> Download PDF</a></span>
+            <span class="print">Up-to-date version at <a href="{{ baseUrl }}">{{ baseUrl }}</a></span>
+        </div>
+    </header>
+
+    <div class="body">
+
+        <aside class="sidebar">
+
+            <section class="sidebar__section">
+                <h2>Contact</h2>
+                <ul class="contact-list">
                     {{#each facts}}
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <span class="text-nowrap">{{ @key }}</span>
-                        <span class="text-nowrap">{{{ this }}}</span>
-                    </li>
+                    <li>{{{ this }}}</li>
                     {{/each}}
                 </ul>
-            </div>
-        </div>
-    </div>
+            </section>
 
-    <div class="border-bottom border-1 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        I am an experienced Software Engineer and Machine Learning Engineer specialising in NLP.
-        Particularly interested in AI alignment problems and (mechanistic) interpretability research. I am motivated to
-        bridge the gap between the capabilities of humans and AI agents, and am fully invested in working towards
-        building a future in which machines and humans cooperate with and augment one another. I am driven by my
-        curiosity to understand the inner workings of the brain and think that advances in AI will play an important role
-        in providing valuable insights into this long-standing puzzle. 
-    </div>
+            <section class="sidebar__section">
+                <h2>Education</h2>
+                <div class="education-entry">
+                    <strong>BSc Mathematics &amp; Physics (hons)</strong>
+                    <span class="edu-detail">&mdash; Open University, 2013&ndash;2018</span>
+                </div>
+                <div class="education-entry">
+                    <strong>BA Informatics</strong>
+                    <span class="edu-detail">&mdash; Molde University, 2007&ndash;2010</span>
+                </div>
+            </section>
 
-    <div class="mb-5">
-        <h2 class="mb-4">Projects</h2>
+            <section class="sidebar__section">
+                <h2>Research Interests</h2>
+                <div class="sidebar-entry">AI Safety &amp; Alignment</div>
+                <div class="sidebar-entry">Mechanistic Interpretability</div>
+                <div class="sidebar-entry">Adversarial Robustness &amp; Red Teaming</div>
+                <div class="sidebar-entry">Behavioural, HITL &amp; Agentic Evals</div>
+                <div class="sidebar-entry">Societal Impacts of AI</div>
+            </section>
 
-        {{#each experience}}
-        <div class="mb-4">
-            <h3 class="fs-4 fw-normal">{{ header }}</h3>
+            <section class="sidebar__section">
+                <h2>Skills</h2>
+                <div class="sidebar-entry">Python, PyTorch, Julia, JS/TS</div>
+                <div class="sidebar-entry">React, Full Stack, AWS, GCP</div>
+                <div class="sidebar-entry">LLMs, NLP, Model Training &amp; Fine-tuning</div>
+            </section>
 
-            {{{markdown contents }}}
+            <section class="sidebar__section">
+                <h2>Publications</h2>
+                <div class="sidebar-entry">
+                    <a href="https://arxiv.org/abs/2602.20813"><strong>Pressure Reveals Character</strong></a>
+                    <span class="year">&mdash; arXiv, 2026</span>
+                </div>
+                <div class="sidebar-entry">
+                    <a href="https://openreview.net/pdf?id=kVaE2kYjtV"><strong>Unpacking Human Preference for LLMs (HUMAINE)</strong></a>
+                    <span class="year">&mdash; ICLR 2026</span>
+                </div>
+                <div class="sidebar-entry">
+                    <a href="https://github.com/prolific-oss/commercial-pressure-evals"><strong>Commercial Pressure Evals</strong></a>
+                    <span class="year">&mdash; IASEAI 2026</span>
+                </div>
+                <div class="sidebar-entry">
+                    <a href="https://arxiv.org/abs/2504.18872"><strong>LAT Improves Representation of Refusal</strong></a>
+                    <span class="year">&mdash; ICLR 2025</span>
+                </div>
+                <div class="sidebar-entry">
+                    <a href="https://arxiv.org/abs/2409.15019"><strong>Evaluating Synthetic Activations from SAE Latents</strong></a>
+                    <span class="year">&mdash; NeurIPS 2024</span>
+                </div>
+            </section>
 
-            <div>
-                {{#each skills }}
-                <span class="badge text-body border border-1">{{ this }}</span>
-                {{/each}}
-            </div>
-        </div>
-        {{/each}}
-    </div>
+            <section class="sidebar__section">
+                <h2>Hackathons</h2>
+                <div class="sidebar-entry">
+                    <a href="https://apartresearch.com/project/who-does-your-ai-serve-manipulation-by-and-of-ai-assistants-77xx"><strong>AI Manipulation Hackathon</strong></a>
+                    <span class="year">&mdash; Apart Research, 2026</span>
+                </div>
+                <div class="sidebar-entry">
+                    <a href="https://github.com/nlpet/democracy-ai-hackathon"><strong>Democracy x AI</strong></a>
+                    <span class="year">&mdash; Apart Lab, 2024</span>
+                </div>
+                <div class="sidebar-entry">
+                    <a href="https://www.apartresearch.com/event/codered"><strong>Testing LLMs for Autonomous Capabilities</strong></a>
+                    <span class="year">&mdash; Apart Lab &amp; METR, 2024</span>
+                </div>
+                <div class="sidebar-entry">
+                    <a href="https://github.com/nlpet/anthropic-hackathon-claude"><strong>Anthropic Claude Hackathon</strong></a>
+                    <span class="year">&mdash; Anthropic London, 2023</span>
+                </div>
+            </section>
 
+        </aside>
 
-    <div class="border-bottom border-1 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Professional Experience</h2>
-        {{#each positions}}
-        <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
-            <div class="col-md-2 pt-1">
-                {{ period }}
-            </div>
-            <div class="col-md-10">
-                <h3 class="fs-4 fw-normal">{{ title }}</h3>
+        <main class="main">
 
-                <div>{{{markdown contents }}}</div>
-
-                <p>
-                    {{#each skills }}
-                    <span class="badge text-body border border-1">{{ this }}</span>
-                    {{/each}}
+            <section class="main__section">
+                <h2>Summary</h2>
+                <p class="summary">
+                    AI Research Engineer building evaluation frameworks and interpretability tools to study
+                    how frontier models align with human values. My work spans agentic, human-in-the-loop, and
+                    behavioural evaluations of safety and alignment, mechanistic interpretability of model internals,
+                    and large-scale studies of how people experience and collaborate with AI systems. I am driven by the
+                    question of how we integrate AI into society responsibly, and I believe that rigorous evaluation,
+                    mechanistic understanding, and empirical study of human-AI interaction are the foundations for
+                    getting this right.
                 </p>
-            </div>
-        </div>
-        {{/each}}
-    </div>
+            </section>
 
-    <div class="border-bottom border-1 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Specialisations & Courses</h2>
-        <span>AI Safety Fundamentals Course - <b>BlueDot Impact</b> - 2024</span> <br />
-        <span>NLP Specialisation - <b>Coursera</b> (deeplearning.ai) - 2020 </span> <br />
-        <span>Professional ML Engineer - <b>Google Cloud</b> - 2020 </span><br />
-        <span>Deep Reinforcement Learning Engineer Specialisation - <b>Udacity</b> - 2018</span><br />
-        <span>Machine Learning Engineer Specialisation - <b>Udacity</b>  - 2018</span><br />
-    </div>
+            <section class="main__section">
+                <h2>Experience</h2>
+                {{#each positions}}
+                <div class="position">
+                    <div class="position__header">{{ title }}</div>
+                    <div class="position__period">{{ period }}</div>
+                    <div class="position__body">{{{markdown contents }}}</div>
+                </div>
+                {{/each}}
 
-    <div class="border-bottom border-1 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Education</h2>
-        <span>BSc Mathematics & Physics (hons) - <b>Open University</b> - 2013 - 2018</span><br />
-        <span>BA Informatics - <b>Molde University</b> - 2007 - 2010</span><br />
+                <h3 class="earlier-roles__heading">Earlier Roles</h3>
+                <div class="earlier-roles">
+                    {{#each earlierRoles}}
+                    <div class="earlier-role">
+                        <span class="earlier-role__title">{{ title }}</span>
+                        <span class="earlier-role__company">{{ company }}</span>
+                        <span class="earlier-role__period">{{ period }}</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </section>
+
+        </main>
+
     </div>
 
 </div>
