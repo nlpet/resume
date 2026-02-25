@@ -15,7 +15,7 @@ module.exports = {
   },
   positions: [
     {
-      title: "Research Engineer @ Prolific",
+      title: "Staff Research Engineer @ Prolific",
       period: "May 2023 - Present",
       skills: [
         "AI Evaluation",
