@@ -26,11 +26,12 @@ module.exports = {
         "Python",
         "R&D",
       ],
-      contents: `- Leading AI evaluation research, building agentic and human-in-the-loop evaluation frameworks for studying safety and alignment in frontier models
-- Led [HUMAINE](https://huggingface.co/spaces/ProlificAI/humaine-leaderboard), a large-scale evaluation of human experience in using AI — paper accepted at [ICLR 2026](https://openreview.net/pdf?id=kVaE2kYjtV)
-- Developed [commercial pressure evaluations](https://github.com/prolific-oss/commercial-pressure-evals) testing how frontier models respond when commercial objectives conflict with user safety, finding most models have no "red line" — won 1st place at the [AI Manipulation Hackathon](https://apartresearch.com/project/who-does-your-ai-serve-manipulation-by-and-of-ai-assistants-77xx), presenting at [IASEAI 2026](https://iaseai.org/)
-- Developed a behavioural alignment benchmark with an [interactive leaderboard](https://huggingface.co/spaces/nlpetprolific/alignment-leaderboard) and co-authored [Pressure Reveals Character](https://arxiv.org/abs/2602.20813)
-- Working on agentic evaluations for ethical decision making, mechanistic interpretability of refusal circuits and black-box prefix attacks in open source models, and studying how to decouple reasoning from knowledge using tiny recursive models (TRMs)
+      contents: `- Leading AI evaluation research — building agentic, behavioural, and human-in-the-loop evaluation frameworks for studying safety and alignment in frontier models, and studying where human judgement adds value in increasingly autonomous research workflows
+- Led [HUMAINE](https://huggingface.co/spaces/ProlificAI/humaine-leaderboard), a large-scale ongoing study of human experience with AI (51 models, 116K+ conversations, 23K+ demographically stratified participants across the US & UK) — paper accepted at [ICLR 2026](https://openreview.net/pdf?id=kVaE2kYjtV)
+- Developed [commercial pressure evaluations](https://github.com/prolific-oss/commercial-pressure-evals) testing how frontier models respond when commercial objectives conflict with user safety, finding most models have no "red line" — paper [The Missing Red Line](https://openreview.net/pdf?id=ev58E64j0n) accepted at the ICBINB workshop at ICLR 2026; won 1st place at the [AI Manipulation Hackathon](https://apartresearch.com/project/who-does-your-ai-serve-manipulation-by-and-of-ai-assistants-77xx) and presented at [IASEAI 2026](https://iaseai.org/)
+- Developed a behavioural alignment benchmark with an [interactive leaderboard](https://huggingface.co/spaces/nlpetprolific/alignment-leaderboard) and co-authored [Pressure Reveals Character](https://arxiv.org/abs/2602.20813) — accepted at [ICML 2026 (spotlight)](https://openreview.net/pdf?id=kFpKyAetr3)
+- Current research spans mechanistic interpretability of chain-of-thought unfaithfulness (tracing decisions to persona directions in the residual stream), deployment validity auditing of LLM benchmarks, metacognitive evaluation of frontier models against human baselines, and eval awareness
+- Involved in client research within benchmarking and evals, including agentic evaluations of ethical decision making in professional tasks and agentic coding
 - Involved in cross-team projects including synthetic polling, agent detection, LLM usage detection, and multi-human-agent collaboration studies
 - Earlier work included developing an open source [social reasoning RLHF dataset](https://huggingface.co/datasets/ProlificAI/social-reasoning-rlhf) and researching methods for aligning LLMs to human values
 `,
@@ -39,14 +40,14 @@ module.exports = {
       title: "AI Safety Researcher @ LASR Labs",
       period: "July 2024 - Sept 2024",
       skills: ["LLMs", "AI Safety", "Mechanistic Interpretability"],
-      contents: `Research into AI safety as part of the [LASR Labs](https://www.lasrlabs.org/) 12-week research programme. Investigated how synthetic activations composed of SAE latents compare to real model activations in GPT-2, measuring sensitivity via KL divergence of output logits. Found that while synthetic activations behave comparably to real ones under sparsity and geometric similarity metrics, real activations contain structural properties beyond independent components. Paper [Evaluating Synthetic Activations composed of SAE Latents in GPT-2](https://arxiv.org/abs/2409.15019) accepted at NeurIPS 2024.
+      contents: `Research into AI safety as part of the [LASR Labs](https://www.lasrlabs.org/) 12-week research programme. Investigated how synthetic activations composed of SAE latents compare to real model activations in GPT-2, measuring sensitivity via KL divergence of output logits. Found that while synthetic activations behave comparably to real ones under sparsity and geometric similarity metrics, real activations contain structural properties beyond independent components. Paper [Evaluating Synthetic Activations composed of SAE Latents in GPT-2](https://arxiv.org/abs/2409.15019) accepted at the ATTRIB workshop at NeurIPS 2024.
 `,
     },
     {
       title: "AI Safety Researcher @ Apart Research",
-      period: "May 2024 - Ongoing",
+      period: "May 2024 - Oct 2024",
       skills: ["NLP", "LLMs", "AI Safety"],
-      contents: `Research fellowship (now ongoing collaboration) into AI safety alongside role at Prolific. Studied how [latent adversarial training](https://arxiv.org/abs/2403.05030) (LAT) affects how language models encode refusal. Found that LAT concentrates refusal representation into fewer SVD components, making models more robust against external attacks but paradoxically more vulnerable to self-generated attack vectors. Paper [LAT Improves the Representation of Refusal](https://arxiv.org/abs/2504.18872) accepted at ICLR 2025.
+      contents: `Research fellowship into AI safety with Apart Research. Studied how [latent adversarial training](https://arxiv.org/abs/2403.05030) (LAT) affects how language models encode refusal. Found that LAT concentrates refusal representation into fewer SVD components, making models more robust against external attacks but paradoxically more vulnerable to self-generated attack vectors. Paper [LAT Improves the Representation of Refusal](https://arxiv.org/abs/2504.18872) accepted at the Building Trust workshop at ICLR 2025.
 `,
     },
     {
