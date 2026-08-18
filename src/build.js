@@ -34,4 +34,7 @@ const html = template({
 fs.writeFileSync(outputDir + "/index.html", html);
 
 // Build PDF
-buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdfFileName}`);
+buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdfFileName}`).catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
